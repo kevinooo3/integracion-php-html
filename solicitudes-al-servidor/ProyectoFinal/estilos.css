@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url("https://images.ctfassets.net/vbuxn5csp0ik/4A7fKybLu0221iqacf7BAz/df2882a80873bea2e3297e7ebc3f6f41/card-background-subhub.png?w=1000");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height: 100vh;
+    display:grid;
+    place-items: center;
+}
+form{
+    height:500px;
+    width:390px;
+    outline:2px solid rgb(114, 114, 114);
+    border-radius: 10px;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    background-color: transparent;
+}
+form .title{
+    place-self: center;
+}
+
+form .cuerpoForm{
+    display:flex;
+    flex-direction:column;
+    padding:10px 10px;
+    font-size:14px;
+}
+form .cuerpoForm div{
+    display:flex;
+    flex-direction:column;
+    
+}
+form .cuerpoForm div:nth-child(5){
+    margin-top:10px ;
+}
+
+form .cuerpoForm div input{
+    height:22px;
+    padding:5px;
+    font-weight: 700;
+}
+form .cuerpoForm div label{
+    height:22px;
+    color:white;
+    font-weight: 300;
+}
+form .cuerpoForm div button{
+    margin:0 auto;
+    background-color: rgb(92, 92, 255);
+    color:white;
+    width:220px;
+    height:40px;
+    border-radius:10px;
+    border:none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+form .cuerpoForm div button:hover{
+    border:2px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+form .contactanos{
+    
+}
+form .contactanos .contact-info{
+    margin:20px auto;
+    width:270px;
+    font-size: 15px;
+    font-weight: 900;
+    color:white
+}
+form .contactanos .contact-info .info{
+    
+}
+
+
+.success{
+    background-color: green;
+    width:auto;
+    height:auto;
+}
+.imposible{
+    background-color: rgb(245, 6, 6);
+    width:auto;
+    height:auto;
+}
