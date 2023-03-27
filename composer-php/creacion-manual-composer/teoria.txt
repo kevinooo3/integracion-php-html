@@ -1,0 +1,5 @@
+1. Debemos crear el archivo composer.json
+2. creamos la carpeta src que contendra dos archivos una de format que contiene la clase y otra de helpers que contiene las funciones
+3. en la consola escribimos composer dump para crear la carpeta vendor que contendra todos los archivos composer
+4. en index.php ponemos llamamos nuestra funciones
+5. en index.php debemos llamar con require a nuestro autoload.php que esta dentro de la carpeta vendor.

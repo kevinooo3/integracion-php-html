@@ -1,0 +1,3 @@
+1. debemos escribir composer init en la consola
+2. por jemplo para este caso buscamos el package carbon y phpunit
+3 en caso no instalemos dependencias automaticas , podemos instalarlas manualmente con "composer install" en la consola 
