@@ -1,0 +1,5 @@
+1.  composer require --dev phpunit/phpunit
+2. escribir el nombre, description el psr-4 del composer.json .Despues escribimos en la consola composer dump para registrar
+3. despues configuramos phpunit.xml
+4. agregamos la carpeta tests y despues src con las clases que llevan los metodos
+5 realizamos pruebas con : php vendor/phpunit/phpunit/phpunit
