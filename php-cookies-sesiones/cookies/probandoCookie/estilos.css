@@ -1,0 +1,12 @@
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    display:flex;
+    padding:10px;
+}
+header img{
+    width:100px;
+}
