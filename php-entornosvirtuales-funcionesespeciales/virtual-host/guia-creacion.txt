@@ -1,0 +1,30 @@
+1. debemos ir a C:\xampp\apache\conf\httpd.conf
+2. verificar dentro de config que 
+    # Virtual hosts
+    Include conf/extra/httpd-vhosts.conf <----- esto no debe tener el # , en caso de tenerlo retirarlo
+3. despues no dirigimos C:\xampp\apache\conf\extra\httpd-vhosts.conf
+4. aqui creamos un ejemplo:
+    // comentario : este es para que localhost se quede donde esta
+    <VirtualHost *:80>
+    ServerAdmin webmaster@dummy-host.example.com
+    DocumentRoot "C:/xampp/htdocs"
+    ServerName localhost
+    ServerAlias localhost
+    ErrorLog "logs/localhost-error.log"
+    CustomLog "logs/localhost-access.log" common
+</VirtualHost>
+// este es para nuestro nuevo virtual host en este caso go.test mostrara lo que hay en la ruta document root
+<VirtualHost *:80>
+    ServerAdmin webmaster@dummy-host.example.com
+    DocumentRoot "C:/xampp/htdocs/php-entornosvirtuales-funcionesespeciales/virtual-host"
+    ServerName go.test
+    ServerAlias go.test
+    ErrorLog "logs/dummy-host.example.com-error.log"
+    CustomLog "logs/dummy-host.example.com-access.log" common
+</VirtualHost>
+
+5. dirigimos a C:\Windows\System32\drivers\etc\hosts
+    agregamos 
+    127.0.0.1       go.test
+    127.0.0.1       localhost
+ 
