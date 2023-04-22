@@ -1,0 +1,21 @@
+{
+    "name": "kevin/proyecto",
+    "description": "pryecto",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kevinooox",
+            "email": "kevinooo_18@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4":{
+            "App\\":"app/",
+            "Database\\": "database/",
+            "Router\\": "router/"
+        }
+        
+    },
+    "require": {}
+}
